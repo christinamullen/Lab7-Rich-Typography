@@ -33,7 +33,12 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 2rem 0 10rem 0;
+    padding-top: 2rem;
+}
+
+.title h5 {
+    padding: 0 0 18rem 0;
+    margin: 0;
 }
 
 .hero {
@@ -75,6 +80,14 @@ body {
     margin: 2rem;
 }
 
+.heroAbout h3 {
+    line-height: calc(1.4 * var(--s-h3));
+}
+
+.heroAbout p {
+    line-height: 1.4;
+}
+
 button {
     padding: .5rem 2rem;
     background-color: var(--c-button);
@@ -90,20 +103,36 @@ h4 {
 }
 
 .subHero {
-    text-align: center;
-    padding: 12rem 1rem 15rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 17rem 1rem 10rem 1rem;
+
 }
 
 .subHero h3 {
-    line-height: 1.3;
+    line-height: calc(1.3 * var(--s-h3));
+
+
 
 }
 
 .subCol {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: left;
-    padding: 0 4rem 0 4rem;
+    padding: 0 1rem 0 1rem;
+}
+
+.subCol h4 {
+    line-height: calc(1.4 * var(--s-h4));
+
+}
+
+.subCol p {
+    line-height: 1.4;
+    max-width: 45ch;
 }
 
 h5 {
@@ -136,6 +165,14 @@ h1 {
     align-items: center;
 }
 
+.left h2 {
+    line-height: calc(1.4 * var(--s-h2));
+}
+
+.left h4 {
+    line-height: calc(1.4 * var(--s-h4));
+}
+
 .third img {
     max-width: 20%;
 }
@@ -166,8 +203,11 @@ footer img {
     }
 
     .title {
-
         padding: 2rem 0 0 0;
+    }
+
+    .title h5 {
+        padding: 0 0 2rem 0;
     }
 
     .heroPics {
@@ -175,6 +215,31 @@ footer img {
         justify-content: space-between;
         gap: 1.5rem;
 
+    }
+
+    .heroAbout {
+        max-width: 60ch;
+    }
+
+    .subHero {
+        padding: 5rem 4rem 5rem 4rem;
+
+    }
+
+
+    .subHero h3 {
+        max-width: 40ch;
+    }
+
+    .subCol {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+
+    }
+
+    .subCol p {
+        padding-top: 1.5rem;
     }
 
     .third {
